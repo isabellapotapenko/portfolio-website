@@ -1,0 +1,236 @@
+/*
+Colors used:
+Primary Color (Black): #000000;
+Secondarly color(orangy): #F2795A;
+Hyperlinks (Wellthy Green): #3F815D;
+Strategy Button : #B02D0C;
+Research Button : #E62600;
+Analysis Button : #C13F10;
+Ideation Button : #375B29;
+Design Button : #607A4D;
+Test Button : #424BB2;
+Iterate Button : #696FB0;
+
+*/
+
+/* FONTSECTION */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #000000;
+}
+
+h1, h2, h3, h4 { 
+   line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*image*/
+img {
+    width: 100%;
+  }
+
+/*HYPERLINKS*/
+a {
+    color: #000000;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:focus {
+    color: #3F815D;
+    text-decoration: none; 
+  }
+  a:visited { 
+    color:#3F815D; 
+  }
+  a:active { 
+    color: #696FB0;
+  }
+
+  /*BUTTONS*/
+      /*Design Process Buttons*/
+              /*strategy*/
+
+  .button.strategy {
+    background-color: #B02D0C;
+    color: #FFFFFF;
+    transition: 0.2s opacity;
+    }
+    .button.strategy:visited {
+        color:#FFFFFF;
+    }
+    .button.strategy:hover,
+    .button.strategy:focus {
+        opacity: 0.8; 
+        color: #FFFFFF;
+        background-color: #B02D0C;
+        text-decoration: none;
+    }
+            /*research*/
+
+    .button.research {
+        background-color: #E62600;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+        .button.research:visited {
+            color:#FFFFFF;
+        }
+    .button.research:hover,
+    .button.research:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #E62600;
+            text-decoration: none;
+        }
+
+                /*analisys*/
+
+    .button.analysis {
+        background-color: #C13F10;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+    .button.analysis:visited {
+            color:#FFFFFF;
+        }
+    .button.analysis:hover,
+    .button.analysis:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #C13F10;
+            text-decoration: none;
+        }
+             /*Ideation*/
+    .button.ideation {
+        background-color: #375B29;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+    .button.ideation:visited {
+            color:#FFFFFF;
+        }
+    .button.ideation:hover,
+    .button.ideation:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #E62600;
+            text-decoration: none;
+        }
+             /*Design*/
+    .button.design {
+        background-color: #607A4D;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+    .button.design:visited {
+            color:#FFFFFF;
+        }
+    .button.design:hover,
+    .button.design:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #607A4D;
+            text-decoration: none;
+        }
+             /*Test*/
+    .button.test {
+        background-color: #424BB2;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+    .button.test:visited {
+            color:#FFFFFF;
+        }
+    .button.test:hover,
+    .button.test:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #424BB2;
+            text-decoration: none;
+        }
+             /*Iterate*/
+    .button.iterate {
+        background-color: #696FB0;
+        color: #FFFFFF;
+        transition: 0.2s opacity;
+        }
+    .button.iterate:visited {
+            color:#FFFFFF;
+        }
+    .button.iterate:hover,
+    .button.iterate:focus {
+            opacity: 0.8; 
+            color: #FFFFFF;
+            background-color: #696FB0;
+            text-decoration: none;
+        }
+        
+    
+    /*Contact Button*/
+    .button.contact {
+        background-color: transparent;
+        color: #000000;
+        border: 2px solid #949494;
+    }
+    .button.contact:hover,
+    .button.contact:focus {
+        opacity: 0.8; 
+        color: #FFFFFF;
+        background-color: #B02D0C;
+        text-decoration: none;
+    }
+    .button.contact:visited {
+        color: #000000;
+    }
+    .button.contact:active {
+        color: #FFFFFF;
+        background-color: #B02D0C;
+    }
+
+    /*Primary Button*/
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 60px;
+    border-bottom: 2px solid #949494;
+    transition: 0.2s opacity;
+    }
+    .button:hover,
+    .button:focus {
+        opacity: 0.5; 
+        color: #FFFFFF;
+        background-color: #000000;
+        text-decoration: none;
+    }
+    .button:visited {
+        color: #FFFFFF;
+}
+    .button:active {
+    background-color: #3F815D;
+}
+
