@@ -3,6 +3,7 @@ Colors used:
 Primary Color (Black): #000000;
 Secondarly color(orangy): #F2795A;
 Hyperlinks (Wellthy Green): #3F815D;
+Light green: #C8DFCC;
 Strategy Button : #B02D0C;
 Research Button : #E62600;
 Analysis Button : #C13F10;
@@ -12,6 +13,9 @@ Test Button : #424BB2;
 Iterate Button : #696FB0;
 
 */
+* {
+    box-sizing: border-box;
+  }
 
 /* FONTSECTION */
 body {
@@ -21,6 +25,7 @@ body {
     line-height: 1.6;
     color: #000000;
 }
+
 
 h1, h2, h3, h4 { 
    line-height: 1.4;
@@ -65,8 +70,11 @@ a {
     color: #696FB0;
   }
 
+
+
   /*BUTTONS*/
       /*Design Process Buttons*/
+
               /*strategy*/
 
   .button.strategy {
@@ -132,7 +140,7 @@ a {
     .button.ideation:focus {
             opacity: 0.8; 
             color: #FFFFFF;
-            background-color: #E62600;
+            background-color: #375B29;
             text-decoration: none;
         }
              /*Design*/
@@ -178,16 +186,45 @@ a {
         }
     .button.iterate:hover,
     .button.iterate:focus {
-            opacity: 0.8; 
-            color: #FFFFFF;
-            background-color: #696FB0;
-            text-decoration: none;
+        opacity: 0.8; 
+        color: #FFFFFF;
+        background-color: #696FB0;
+        text-decoration: none;
         }
+    
+    .button.top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: auto;
+        color: white;
+    }
         
+    .button.top:visited {
+        color: #ffffff;
+     }
+        
+    .button.top:hover,
+    .button.top:focus, {
+        opacity: 100%; 
+        text-decoration: none;
+        background-color: #000000;
+    }
+        
+    .button.top:active {
+        background-color: #000000;
+        color: lightgray;
+    }
+
+
+
     
     /*Contact Button*/
+    .telephone {
+        color: white;
+    }
     .button.contact {
-        background-color: transparent;
+        background-color: white;
         color: #000000;
         border: 2px solid #949494;
     }
@@ -212,6 +249,7 @@ a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     background-color: #000000;
     color: #FFFFFF;
     font-weight: 500;
@@ -219,6 +257,7 @@ a {
     border-radius: 60px;
     border-bottom: 2px solid #949494;
     transition: 0.2s opacity;
+    width: auto;
     }
     .button:hover,
     .button:focus {
@@ -234,3 +273,141 @@ a {
     background-color: #3F815D;
 }
 
+
+/*LAYOUT STYLING*/
+.container {
+    padding: 0 15px;
+  }
+
+.row {
+    margin: 25px 0; 
+}
+.center {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+} 
+
+
+/*HEADER*/
+header {
+    display: inline-block;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: [object Object]px; 
+	height: [object Object]px; 
+	background: #000000; 
+	border: solid #BDBDBD 0; 
+	box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.5)  ; 
+}
+
+main {
+    padding-top: 115px;
+  }
+
+    
+  
+/*Navigation*/
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+/*design strategy buttons*/
+nav > ol {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/*Navigation*/
+nav > ul > li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color:#FFFFFF;
+}
+
+/*design strategy buttons*/
+nav > ol > li {
+    display: inline-block;
+    padding: auto 1;
+}
+
+/*Navigation*/
+nav > ul > li, a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover, a:focus {
+    opacity: 0.8; 
+    color: lightgray;
+}
+
+nav > ul > li > a:visited {
+    color: #FFFFFF;
+}
+
+nav > ul > li > a:active {
+    color: darkgray;
+}
+
+/*Hero*/
+
+#hero {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero h1, h2, h3 {
+    text-align: center;
+}
+
+#top h1 {
+    text-align: center;
+}
+
+#ƒ
+
+
+#contact {
+    text-align: center;
+}
+
+/*Work*/
+
+#work h2 {
+    text-align: center;
+}
+
+
+
+/*footer*/
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+}
+.linkedin {
+    display: inline-block;
+    width: 50px;
+}
+
+.behance {
+    display: inline-block;
+    width: 50px;
+}
