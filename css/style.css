@@ -376,7 +376,7 @@ nav > ul > li {
     padding: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
     color:#FFFFFF;
 }
 
@@ -515,10 +515,24 @@ footer {
         padding-bottom: 20px;
       }
        .col-lg-7 {
-        width: 58.33%;
+        width: 60%;
       }
       .col-lg-5 {
-        width: 41.66%;
+        width: 40%;
+      }
+      .col-lg-7 {
+        width: 60%
+        float: left;
+        padding-bottom: 40px;
+      }
+
+      .col-lg-8 {
+        width: 40%;
+        float: right;
+      }
+
+      #about-page .col-md-6{
+        width: 100%;
       }
 
     [class*="col-"] {
