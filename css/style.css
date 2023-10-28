@@ -32,11 +32,11 @@ h1, h2, h3, h4 {
 }
 h1 {
     font-size: 2.75em;
-    font-weight: 600;
+    font-weight: 500;
 }
 h2 {
     font-size: 2.25em;
-    font-weight: 600;
+    font-weight: 500;
 }
 h3 {
     font-size: 1.75em;
@@ -320,7 +320,7 @@ a {
 }
 
 .logo {
-    max-width: auto;
+    max-width: 150;
 } 
 
 
@@ -345,8 +345,7 @@ header {
 
 header {
     background-color: #000000;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     position: relative;
     box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
   }
@@ -359,11 +358,44 @@ header .logo {
       
   
 /*=================Navigation======================*/
+
+.navtoggle li:not(:last-child) {
+    display: none; /* makes it so you cannot see menu items, only menu icon */
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative; /*this is the div that was created for the hamburger menu-- will help place menu icon to right of logo*/
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  } /* positions the hambuerger menu and makes it a little bigger*/
+  
+  .navtoggle.responsive li  {
+    display: block; /*this unhides the menu items when the toggle class is responsive */
+  }
+
+  .navtoggle.responsive nav {
+    padding: 15px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 15px;
+  }
+
+
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
-
 
 nav > ol {
     list-style-type: none;
@@ -372,8 +404,7 @@ nav > ol {
 }
 
 nav > ul > li {
-    display: inline-block;
-    padding: 0 15px;
+    padding: 0 11px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 300;
@@ -470,8 +501,21 @@ footer {
     nav {
         width: auto;
         float: right;
-        margin-top: 4px
+        margin-top: -14px
     }
+    nav > ul{
+        margin: 1em 0;
+    } /*to keep the margins we are removing from the <ul> in <nav> in smaller screens*/
+
+    nav > ul > li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block; /*lines up the menu items so you can use them outside of hamburger menu */
+      }
+      .navtoggle li:last-child {
+        display: none; /*hides the hamburger icon in larger screens */
+      }
     body {
         font-size: 18px;
     }
@@ -489,6 +533,9 @@ footer {
     #about-page h3 { 
         margin-top: 0;
     }
+    .logo {
+        max-width: auto;
+    }
     
 }
 
@@ -501,13 +548,9 @@ footer {
     nav {
         width: auto;
         float: right;
-        margin-top: 4px
+        margin-top: -18px;
     }
-    /*
-    main {
-        padding-top: 160px;
-      }
-      */
+   
     body {
         font-size: 20px;
     }
@@ -547,6 +590,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
       }
+     
 }
 
 /*========xlarge========*/
