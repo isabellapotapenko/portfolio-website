@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html  lang="en" dir="ltr">
 <head>
+    <script src="https://kit.fontawesome.com/8888ef63cc.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="img/favicon.png" rel="shortcut icon">
@@ -13,18 +14,21 @@
 <body id="about-page">
     <!--for the header-->
     <header>
-     <!--for the navigation-->   
-        <div>
-            <img src="img/img_logo.png" class="logo" alt= "Isabella Potapenko">
-        <nav> 
-            <ul>
-                <li><a href="index.html"> Work</a></li>
-                <li><a href="about.html"> About</a></li>
-                <li><a href="#contact"> Contact</a></li>
-            </ul>
-        </nav>       
-        </div>
-    </header>
+        <!--for the navigation-->   
+           <div class="container">
+               <div class="navtoggle" id="myNavtoggle">
+               <img src="img/img_logo.png" class="logo" alt= "Isabella Potapenko">
+                   <nav class="navigation"> 
+                       <ul>
+                           <li><a href="index.html"> Work</a></li>
+                           <li><a href="about.html"> About</a></li>
+                           <li><a href="#contact" onclick="menuToggle()"> Contact</a></li>
+                           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                       </ul>
+                   </nav> 
+               </div>      
+           </div>
+       </header>
 
 
     <main>
@@ -110,6 +114,7 @@
                 <p>Copyright Isabella Potapenko 2023</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
     </html>
