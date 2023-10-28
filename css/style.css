@@ -60,14 +60,14 @@ a {
   }
   a:hover,
   a:focus {
-    color: #3F815D;
+    color: #383b39;
     text-decoration: none; 
   }
   a:visited { 
-    color:#3F815D; 
+    color:#010101; 
   }
   a:active { 
-    color: #696FB0;
+    color: #7e7e80;
   }
 
 
