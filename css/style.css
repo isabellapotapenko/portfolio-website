@@ -52,7 +52,10 @@ h4 {
 img {
     width: 100%;
   }
-
+  .headshot {
+    width: 70%;
+    style: center;
+}
 /*======================HYPERLINKS=============================*/
 a {
     color: #000000;
@@ -81,6 +84,8 @@ a {
     background-color: #B02D0C;
     color: #FFFFFF;
     transition: 0.2s opacity;
+    padding: 5px 103px;
+    margin: 2px;
     }
     .button.strategy:visited {
         color:#FFFFFF;
@@ -98,6 +103,8 @@ a {
         background-color: #E62600;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 100px;
+        margin: 2px;
         }
         .button.research:visited {
             color:#FFFFFF;
@@ -116,6 +123,8 @@ a {
         background-color: #C13F10;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 106px;
+        margin: 2px;
         }
     .button.analysis:visited {
             color:#FFFFFF;
@@ -132,6 +141,9 @@ a {
         background-color: #375B29;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 105px;
+        margin: 2px;
+
         }
     .button.ideation:visited {
             color:#FFFFFF;
@@ -148,6 +160,9 @@ a {
         background-color: #607A4D;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 113px;
+        margin: 2px;
+
         }
     .button.design:visited {
             color:#FFFFFF;
@@ -164,6 +179,9 @@ a {
         background-color: #424BB2;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 126px;
+        margin: 2px;
+
         }
     .button.test:visited {
             color:#FFFFFF;
@@ -180,6 +198,9 @@ a {
         background-color: #696FB0;
         color: #FFFFFF;
         transition: 0.2s opacity;
+        padding: 5px 111px;
+        margin: 2px;
+
         }
     .button.iterate:visited {
             color:#FFFFFF;
@@ -215,6 +236,12 @@ a {
         color: lightgray;
     }
 
+    /*===resume button===*/
+    .button.resume {
+        padding: 10px 20px;
+        margin: 20px 0 30px 0;
+    }
+
     
 /*======================Contact Button============================*/
     .telephone {
@@ -223,7 +250,6 @@ a {
     .button.contact {
         background-color: white;
         color: #000000;
-        border: 2px solid #949494;
     }
     .button.contact:hover,
     .button.contact:focus {
@@ -254,6 +280,7 @@ a {
     border-radius: 60px;
     border-bottom: 2px solid #949494;
     transition: 0.2s opacity;
+    margin: 20px;
 
     }
     .button:hover,
@@ -472,6 +499,9 @@ nav > ul > li > a:active {
 
 
 
+
+
+
 /*=======================footer================================*/
 
 footer {
@@ -492,12 +522,56 @@ footer {
 /*============================MEDIA QUERIES====================================*/
 
 
-/*========medium========*/
+/*============================medium================================*/
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
         padding: 20px 0 13px;
     }
+
+
+
+
+/*===Design Process buttons===*/
+
+    .button.strategy {
+        padding: 5px 10px;
+        margin: 0;
+    }
+    .button.research {
+        padding: 5px 10px;
+        margin: 0;
+    }
+    .button.analysis {
+        padding: 5px 10px;
+        margin: 0;
+    }
+    .button.ideation {
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .button.design {
+        padding: 5px 10px;
+        margin: 0;
+    }
+    .button.test {
+        padding: 5px 10px;
+        margin: 0;
+    }
+    .button.iterate {
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+/*====About me photo=====*/
+
+    .headshot {
+        width: 50%;
+    }
+
+
+
     nav {
         width: auto;
         float: right;
