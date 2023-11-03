@@ -495,6 +495,10 @@ h3 {
   text-align: center;
 }
 
+#work h3 {
+  text-align: center;
+}
+
 #about-page h2 {
   font-weight: 300;
 }
@@ -503,6 +507,15 @@ h3 {
 h3 {
   text-align: left;
 }
+
+h3.wellthyH3 {
+  text-align: center;
+}
+
+nav.jumpnav {
+  float: none;
+  margin-top: 40px;
+} /* this centered my Design Process Buttons by overriding the "right" centering applied to the nav*/
 
 /*=======================footer================================*/
 
@@ -586,6 +599,10 @@ footer {
   .navtoggle li:last-child {
     display: none; /*hides the hamburger icon in larger screens */
   }
+  .navtoggle.responsive li {
+    padding: 0px 10px 0 10px;
+    border-top: 0px solid #ffffff;
+  }
   body {
     font-size: 18px;
   }
@@ -611,6 +628,7 @@ footer {
   #about-page h3 {
     margin-top: 0;
   }
+
   .logo {
     max-width: auto;
   }
@@ -635,6 +653,16 @@ footer {
     float: right;
     margin-top: -18px;
   }
+/* to place headshot on same line as h1*/
+  #about-page h1 {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
 
   body {
     font-size: 20px;
@@ -736,4 +764,7 @@ footer {
   to {
     transform: translate(100px, 48px);
   }
+}
+.col-md-6 p {
+  margin-top: -6px;
 }
