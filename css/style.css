@@ -74,7 +74,7 @@ a:visited {
 a:active {
   color: #7e7e80;
 }
-.wellthy {
+.blackHyperlink {
   color: #000000;
 }
 
@@ -527,11 +527,21 @@ footer {
 .linkedin {
   display: inline-block;
   width: 50px;
+  margin-top: -25px;
 }
 
 .behance {
   display: inline-block;
   width: 50px;
+}
+
+.intouch {
+  margin-bottom: -20px;
+}
+
+.copyright {
+  margin-bottom: -20px;
+  font-size: 10px;
 }
 
 /*============================MEDIA QUERIES====================================*/
@@ -642,6 +652,26 @@ footer {
   }
 }
 
+/*========In between screen sizes to make the headshot smaller====*/
+
+@media only screen and (min-width: 817px) {
+  .headshot {
+    width: 20%;
+    padding: 20px;
+  }
+  #about-page h1 {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+    padding-bottom: 5px;
+  }
+}
 /*========large========*/
 @media only screen and (min-width: 1024px) {
   header {
