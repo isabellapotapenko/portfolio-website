@@ -77,6 +77,12 @@ a:active {
 .blackHyperlink {
   color: #000000;
 }
+.blackHyperlink:hover,
+.blackHyperlink:hover {
+  opacity: 80%;
+  color: #E7AE8E;
+  text-decoration: none;
+}
 
 
 /*======================BUTTONS===========================*/
@@ -252,9 +258,9 @@ a:active {
 }
 .button.contact:hover,
 .button.contact:focus {
-  opacity: 0.8;
+  opacity: 100%;
   color: #ffffff;
-  background-color: #b02d0c;
+  background-color: #E7AE8E;
   text-decoration: none;
 }
 .button.contact:visited {
@@ -262,7 +268,7 @@ a:active {
 }
 .button.contact:active {
   color: #ffffff;
-  background-color: #b02d0c;
+  background-color: #E7AE8E;
 }
 
 /*=================Primary Button==============================*/
@@ -717,13 +723,13 @@ footer {
     width: 40%;
   }
   .col-lg-7 {
-    width: 50%;
+    width: 55%;
     float: left;
     padding-bottom: 40px;
   }
 
   .col-lg-8 {
-    width: 50%;
+    width: 45%;
     float: right;
   }
 
